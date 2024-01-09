@@ -58,7 +58,7 @@ public class EmployeeService {
         for (String jobTitle : totalSalaryByJobTitle.keySet()) {
             double totalSalary = totalSalaryByJobTitle.get(jobTitle); // getting tthe total salarys of a jobTotle
             int count = jobCount.get(jobTitle); // getting how many employeers who are working under the jobTitle
-            double averageSalary = totalSalary / count; // calculating the avg of the jobTitle
+            double averageSalary = totalSalary / count ; // calculating the avg of the jobTitle
             averageSalaries.put(jobTitle, averageSalary); // adding the avg of the jobTitle to the list
         }
         return averageSalaries;
