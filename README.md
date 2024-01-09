@@ -68,7 +68,8 @@ Respect the following design flow:
 - The **EmployeeController** exposes an endpoint for uploading the CSV file and processes it using the **EmployeeService**.
 - **EmployeeService** handles the file reading, employee data extraction, and calculation of average salary by job title.
 - **Employee** model represents the structure of an employee.
-- implimented error scenarios such as incorrect file formats all located in **Exceptions** folder
+- implimented error handling scenarios such as incorrect file formats all located in **Exceptions** folder
+- implimenting Unit Test for **EmployeeService**
 
 #### Frontend (Next.js/React):
 - Created React components for the UI: **UploadComponent**, **EmployeeTable**, **JobSummaryTable**, and a view **Employees**.
@@ -76,7 +77,7 @@ Respect the following design flow:
 - **UploadComponent** provides file upload functionality and triggers the processing of data.
 - **EmployeeTable** displays a paginated list of employees, while **JobSummaryTable** shows the average salary for each job title.
 - create **api/proccessCSV** file that made the request to back-end and set the results to its states
-- implimented validation rules on the file to make sure tat is a csv file
+- implimented validation rules on the file to make sure only csv files are allowed to be sent to back-end
 
 ## instructions to run the project:
 
